@@ -5,37 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xclussive Automotives - Your Car, Your Choice</title>
     <link rel="stylesheet" href="styles.css">
+<style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
-     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: url('/assets/images/owner.jpg') center center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h1 {
-            font-size: 3rem;
-        }
-        .services-section {
-            padding: 60px 20px;
-        }
-    </style>
+    /* Header Navigation */
+    header {
+      background-color: #2f4f4f;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 28px;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content Styling */
+    .container {
+      width: 90%;
+      margin: 40px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .owner-photo {
+      width: 300px;
+      height: 300px;
+      background-color: #ccc;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .owner-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-text {
+      max-width: 600px;
+      margin: 20px;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2d3436;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
+<body>
+  <!-- Header -->
+  <header>
+    <h1>About</h1>
+    <nav>
+      <a href="../index">Home</a>
+      <a href="rent">Rent</a>
+      <a href="sales">Sales</a>
+      <a href="About">About</a>
+      <a href="contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="owner-photo">
+      <img src="https://via.placeholder.com/300x300.png?text=Owner+Photo" alt="Owner Photo">
+    </div>
+
+    <div class="about-text">
+      <p>Hello and welcome!</p>
+      <p>
+        Xclussive Automotives is a comprehensive automotive service provider dedicated to offering top-notch solutions for used car sales, vehicle repair, painting, and spare parts. 
+Our business is designed to meet the diverse needs of car owners and enthusiasts alike. Whether you're looking to purchase a reliable used vehicle, restore a damaged car, or find quality spare parts, Xclussive Automotives is your one-stop destination.
+  </p>
+      <p>
+        We specialize in
+ Used Car Sales:
+          where We offer a wide range of pre-owned vehicles, ensuring quality and affordability for our customers.
+     </p>
+      <p>
+        Car Repairs: 
+Our expert mechanics are skilled in handling various vehicle issues, from minor repairs to major overhauls.
+      </p>
+        <p>
+        Car Painting:
+            We provide professional painting services, using high-quality materials to restore or enhance your vehicle's appearance.
+       </p>
+        <p>
+        Spare Parts Sales:
+            We stock and sell a variety of genuine and aftermarket car parts to keep your vehicle running smoothly.
+       </p>
+        <p>
+        At Xclussive Automotives, we pride ourselves on delivering excellent customer service, ensuring every vehicle receives the care and attention it deserves. Whether you need to buy, repair, or maintain your car, we are committed to providing the best solutions at competitive prices.
+       </p>        
+    </div>
+  </div>
+
+  <!-- Hero Section -->
     <header id="home">
         <h1>Welcome to Xclussive Automotives</h1>
         <p>Your one-stop solution for car sales, rentals, and more.</p>
