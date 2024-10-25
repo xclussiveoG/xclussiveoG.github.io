@@ -45,9 +45,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages/contacts">Contacts</a>
-                    </li>
 			<li class="nav-item">
                         <a class="nav-link" href="/pages/gallery">Gallery</a>
 		   <li class="nav-item">
@@ -104,22 +101,19 @@
     <section class="bg-light py-5" id="contact">
         <div class="container">
             <h2 class="text-center mb-4">Contact Us</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
+		
+            <!-- Contact Form -->
+		
+  <div class="container">
+    <form action="https://formspree.io/f/xwpkpjwr" method="POST" onsubmit="handleSubmit(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="success-message">Thank you! Your message has been sent successfully.</div>
+  </div>
+		
     </section>
 
     <!-- Footer -->
